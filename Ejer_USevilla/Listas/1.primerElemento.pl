@@ -1,0 +1,1 @@
+primerElemento([X|_],X).

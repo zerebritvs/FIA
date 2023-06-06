@@ -1,0 +1,1 @@
+colaLista([_|Xs],Xs).

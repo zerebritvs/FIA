@@ -1,0 +1,1 @@
+cons(X,Xs,[X|Xs]).

@@ -1,0 +1,17 @@
+primo(N):-
+		N > 2,
+		primo_aux(N,2).
+
+primo_aux(N,N).
+
+primo_aux(N,M):-
+				0 =\= N mod M,
+				Z is M + 1,
+				primo_aux(N,Z).
+
+primos(T,T):- T > 1,
+				primo(T).
+
+primos(T,X):- T > 1,
+				T1 is T - 1,
+				primos(T1,X).
